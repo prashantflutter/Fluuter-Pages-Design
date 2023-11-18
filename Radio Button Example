@@ -1,0 +1,308 @@
+// 52. Create an application with radio buttons (Add, Substraction,
+// Multiply, Division) EditText (number1, number2) and print result as
+// per user choice from radio button in TextView
+
+import 'package:flutter/material.dart';
+
+
+class ArithmeticPage extends StatefulWidget {
+  const ArithmeticPage({Key? key}) : super(key: key);
+
+  @override
+  State<ArithmeticPage> createState() => _ArithmeticPageState();
+}
+
+class _ArithmeticPageState extends State<ArithmeticPage> {
+
+  String mainValue = "add";
+  TextEditingController valueA = TextEditingController();
+  TextEditingController valueB = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        // child: Row(
+        //
+        //     children: [
+        //
+        //       ListTile(
+        //         title: const Text('A'),
+        //         leading: Radio(
+        //           //value: BestTutorSite.javatpoint,
+        //           //groupValue: _site,
+        //           onChanged: (val)
+        //           {
+        //             setState(() {
+        //
+        //             });
+        //           }, value: null,
+        //           groupValue: null,
+        //         ),
+        //       ),
+        //
+        //       ListTile(
+        //         title: const Text('B'),
+        //         leading: Radio(
+        //           //value: BestTutorSite.javatpoint,
+        //           //groupValue: _site,
+        //           onChanged: (val)
+        //           {
+        //             setState(() {
+        //
+        //             });
+        //           }, value: null,
+        //           groupValue: null,
+        //         ),
+        //       ),
+        //
+        //
+        //     ],
+        //
+        // ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 50,),
+            Text('Addition ,Substraction',style: TextStyle(color: Colors.white,fontSize: 20),),
+            Text('Multiply ,Division',style: TextStyle(color: Colors.white,fontSize: 20),),
+            SizedBox(height: 20,),
+            SizedBox(
+              width: 150,
+              height: 55,
+              child: TextField(
+                controller: valueA,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  hintText: "Enter first Value",
+                  hintStyle: TextStyle(color: Colors.white),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blueAccent.shade700,width: 5),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+
+                ),
+              ),
+            ),
+            SizedBox(height: 20,),
+            SizedBox(
+              width: 150,
+              height: 55,
+              child: TextField(
+                controller: valueB,
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  hintText: "Enter second Value",
+                  hintStyle: TextStyle(color: Colors.white),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blueAccent.shade700,width: 5),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 450,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  // Container(
+                  //   width: double.infinity,
+                  //   height: 150,
+                  //   child: SingleChildScrollView(
+                  //    scrollDirection :Axis.horizontal,
+                  //     child: Row(
+                  //       children: [
+                  //         Expanded(child: RadioListTile(
+                  //             title: Text("Addition"),
+                  //             value: "add",
+                  //             groupValue: mainValue,
+                  //             activeColor: Colors.blueAccent.shade700,
+                  //             onChanged: (value){
+                  //               setState(() {
+                  //                 mainValue = value.toString();
+                  //               });
+                  //             }),),
+                  //         SizedBox(width: 10,),
+                  //         Expanded(
+                  //           child: RadioListTile(
+                  //               title: Text("Substraction"),
+                  //               value: "sub",
+                  //               groupValue: mainValue,
+                  //               activeColor: Colors.blueAccent.shade700,
+                  //               onChanged: (value){
+                  //                 setState(() {
+                  //                   mainValue = value.toString();
+                  //                 });
+                  //               }),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  // SizedBox(
+                  //   width: double.infinity,
+                  //   height: 150,
+                  //   child: SingleChildScrollView(
+                  //     scrollDirection: Axis.horizontal,
+                  //     child: Row(
+                  //       children: [
+                  //         Expanded(
+                  //           child: RadioListTile(
+                  //               title: Text("Multiply"),
+                  //               value: "mul",
+                  //               activeColor: Colors.blueAccent.shade700,
+                  //               groupValue: mainValue,
+                  //               onChanged: (value){
+                  //                 setState(() {
+                  //                   mainValue = value.toString();
+                  //                 });
+                  //               }),
+                  //         ),
+                  //         SizedBox(width: 10,),
+                  //         Expanded(child: RadioListTile(
+                  //             title: Text("Division"),
+                  //             value: "div",
+                  //             activeColor: Colors.blueAccent.shade700,
+                  //             groupValue: mainValue,
+                  //             onChanged: (value){
+                  //               setState(() {
+                  //                 mainValue = value.toString();
+                  //               });
+                  //             }),)
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  Row(
+                    children:<Widget>[
+                      Expanded(
+                        child: ListTile(
+                          title: const Text('A'),
+                          leading: Radio(
+                            //value: BestTutorSite.javatpoint,
+                            //groupValue: _site,
+                            onChanged: (val)
+                            {
+                              setState(() {
+
+                              });
+                            }, value: null,
+                            groupValue: null,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: ListTile(
+                          title: const Text('B'),
+                          leading: Radio(
+                            //value: BestTutorSite.javatpoint,
+                            //groupValue: _site,
+                            onChanged: (val)
+                            {
+                              setState(() {
+
+                              });
+                            }, value: null,
+                            groupValue: null,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 15,),
+
+                      Radio(
+                        value: 1,
+                        groupValue: mainValue,
+                        activeColor: Colors.blueAccent.shade700,
+                        onChanged: (val) {
+                          setState(() {
+                            mainValue = val.toString();
+                          });
+                        },
+                      ),
+                      Text(
+                        'ONE',
+                        style: new TextStyle(fontSize: 17.0),
+                      ),
+
+                      SizedBox(width: 15,),
+                      Radio(
+                        value: 1,
+                        groupValue: mainValue,
+                        activeColor: Colors.blueAccent.shade700,
+                        onChanged: (val) {
+                          setState(() {
+                            mainValue = val.toString();
+                          });
+                        },
+                      ),
+                      Text(
+                        'Two',
+                        style: new TextStyle(fontSize: 17.0),
+                      ),
+
+                    ],
+                  ),
+                  RadioListTile(
+                    title: Text("Addition"),
+                      value: "add",
+                      groupValue: mainValue,
+                      activeColor: Colors.blueAccent.shade700,
+                      onChanged: (value){
+                      setState(() {
+                        mainValue = value.toString();
+                      });
+                  }),
+                  SizedBox(height: 10,),
+                  RadioListTile(
+                      title: Text("Substraction"),
+                      value: "sub",
+                      groupValue: mainValue,
+                      activeColor: Colors.blueAccent.shade700,
+                      onChanged: (value){
+                        setState(() {
+                          mainValue = value.toString();
+                        });
+                      }),
+                  SizedBox(height: 10,),
+                  RadioListTile(
+                      title: Text("Multiply"),
+                      value: "mul",
+                      activeColor: Colors.blueAccent.shade700,
+                      groupValue: mainValue,
+                      onChanged: (value){
+                        setState(() {
+                          mainValue = value.toString();
+                        });
+                      }),
+                  SizedBox(height: 10,),
+                  RadioListTile(
+                      title: Text("Division"),
+                      value: "div",
+                      activeColor: Colors.blueAccent.shade700,
+                      groupValue: mainValue,
+                      onChanged: (value){
+                        setState(() {
+                          mainValue = value.toString();
+                        });
+                      }),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

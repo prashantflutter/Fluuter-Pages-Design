@@ -1,0 +1,28 @@
+OnBanInfo (Online Banner Information)
+Abstract
+ For particular city there is no particular website to check the banner
+information and register it online.
+ There is always a dealer between client and publisher so user cost is increase,
+so we think about the reduce cost of user or client and they can check from
+home and directly connect or communication with the publisher that’s why
+we are developing this website OnBanInfo (Online Banner Information).
+ In this project user can easily communicate and register their banner by
+online.
+ First user register to our website, if user do not want to first register/login
+then user can also skip login and visit the website for observed the site and
+performance of the site.
+ After enter in home page of our site first user choice their publisher.
+ After selection of the publisher user can access the map of city and also see
+that at which place publisher's banner are available and for which time period
+it is occupied.
+ If user want to search for particular area then also possible for some limited
+area and at the search bar, we apply image processing concept for analysis of
+the banners how many of banners are occupy with some particular things like
+mobiles.
+ After all analysis of banners user can select the particular banner in suitable
+location of their need. After Satisfied with their need they can sent request
+for banner registration and user have to upload their poster as a jpg file or
+pdf file.
+ After complete the upload step he can directly communicate with the
+publisher’s employee and after discussion of this they can communicate
+about payment.

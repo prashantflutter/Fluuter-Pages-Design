@@ -26,3 +26,19 @@ pdf file.
  After complete the upload step he can directly communicate with the
 publisher’s employee and after discussion of this they can communicate
 about payment.
+
+
+Admin side:
+ Permission to add publishers on website
+ Handling the data collection of our website
+ Manage GUI of website
+Publisher admin side:
+ Register/login
+ Permission to add their poster or banner information and location
+Client side:
+ Register/Login
+ Skip Login
+ See the location of banners and information which are updated by the
+publishers
+ And also compare the price difference between among publishers
+ Search particular poster location which user want to see

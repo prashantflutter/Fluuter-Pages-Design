@@ -28,3 +28,12 @@ https://stackoverflow.com/questions/48405123/how-to-set-custom-height-for-widget
 
 svg image color black then convert svg new 
 https://shapeshifter.design/
+
+How to change status bar color in Flutter?
+Link ====>  https://stackoverflow.com/questions/52489458/how-to-change-status-bar-color-in-flutter
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.blue, // navigation bar color
+    statusBarColor: Colors.pink, // status bar color
+  ));
+}

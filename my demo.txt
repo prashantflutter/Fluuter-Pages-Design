@@ -1,0 +1,63 @@
+Flutter is an open-source UI software development kit created by Google. 
+It is used to develop cross platform applications from a single codebase for any web browser, Fuchsia, Android, iOS, Linux, macOS, and Windows.
+First described in 2015, Flutter was released in May 2017.
+
+Dart is a programming language designed by Lars Bak and Kasper Lund and developed by Google.
+ It can be used to develop web and mobile apps as well as server and desktop applications. 
+Dart is an object-oriented, class-based, garbage-collected language with C-style syntax. Wikipedia
+Designed by: Lars Bak, Kasper Lund
+Developer: Google
+Filename extensions: dart
+First appeared: October 10, 2011; 12 years ago
+License: BSD
+Paradigm: Multi-paradigm: functional, imperative, object-oriented, reflective
+
+
+Features of Flutter
+Flutter framework offers the following features to developers −
+
+Modern and reactive framework.
+
+Uses Dart programming language and it is very easy to learn.
+
+Fast development.
+
+Beautiful and fluid user interfaces.
+
+Huge widget catalog.
+
+Runs same UI for multiple platforms.
+
+High performance application.
+
+
+Advantages of Flutter
+Flutter comes with beautiful and customizable widgets for high performance and outstanding mobile application. 
+It fulfills all the custom needs and requirements. Besides these, Flutter offers many more advantages as mentioned below −
+
+Dart has a large repository of software packages which lets you to extend the capabilities of your application.
+
+Developers need to write just a single code base for both applications (both Android and iOS platforms).
+ Flutter may to be extended to other platform as well in the future.
+
+Flutter needs lesser testing. Because of its single code base, 
+it is sufficient if we write automated tests once for both the platforms.
+
+Flutter’s simplicity makes it a good candidate for fast development. 
+Its customization capability and extendibility makes it even more powerful.
+
+With Flutter, developers has full control over the widgets and its layout.
+
+Flutter offers great developer tools, with amazing hot reload.
+
+Disadvantages of Flutter
+Despite its many advantages, flutter has the following drawbacks in it −
+
+Since it is coded in Dart language, a developer needs to learn new language (though it is easy to learn).
+
+Modern framework tries to separate logic and UI as much as possible but, 
+in Flutter, user interface and logic is intermixed.
+We can overcome this using smart coding and using high level module to separate user interface and logic.
+
+Flutter is yet another framework to create mobile application. 
+ 	Developers are having a hard time in choosing the right development tools in hugely populated segment.

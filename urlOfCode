@@ -37,3 +37,15 @@ void main() {
     statusBarColor: Colors.pink, // status bar color
   ));
 }
+
+
+
+
+Flutter AAB Generatot Process :
+
+keytool : The term 'keytool' is not recognized as the name of a cmdlet, function, script file, or operable program
+keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+
+Flutter buils Stap by stap site:
+https://docs.flutter.dev/deployment/android
+

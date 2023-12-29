@@ -38,8 +38,29 @@ void main() {
   ));
 }
 
+How to Convert Image to Base64 Encoding in Flutter/Dart
+https://www.fluttercampus.com/guide/224/convert-image-to-base64/
+https://www.geeksforgeeks.org/flutter-convert-an-image-into-base64-string/
 
+String imagepath = " /data/user/img.jpg"; 
+//image path, you can get it with image_picker package
 
+File imagefile = File(imagepath); //convert Path to File
+Uint8List imagebytes = await imagefile.readAsBytes(); //convert to bytes
+String base64string = base64.encode(imagebytes); //convert bytes to base64 string
+print(base64string); 
+
+/* Output:
+  /9j/4Q0nRXhpZgAATU0AKgAAAAgAFAIgAAQAAAABAAAAAAEAAAQAAAABAAAJ3
+  wIhAAQAAAABAAAAAAEBAAQAAAABAAAJ5gIiAAQAAAABAAAAAAIjAAQAAAABAAA
+  AAAIkAAQAAAABAAAAAAIlAAIAAAAgAAAA/gEoAA ... long string output
+*/ 
+
+Uint8List decodedbytes = base64.decode(base64string);
+/* Output:
+[255, 216, 255, 225, 1, 175, 69, 120, 105, 102, 0, 0, 77, 77, 0, 42, 0, 0, 0, 8, 0, 7, 1, 16, 0, 2, 0, 0, 0, 20, 0, 0, 0, 98, 1, 0, 
+0, 4, 0, 0, 0, 1, 0, 0, 5, 112, 1, 1, 0, 4, 0, 0, 0, 1, 0, 0, 7, 64, 1, 50, 0, 2, 0, 0, 0, 20, 0, 0, 0, 118, 1, 18, 0, 3, 0, 0, 0, 1, 0, 1, 0, 0, 135, 105, 0, 4, 0, 0, 0, 1, 0, 0,long string output]
+*/ 
 
 Flutter AAB Generatot Process :
 

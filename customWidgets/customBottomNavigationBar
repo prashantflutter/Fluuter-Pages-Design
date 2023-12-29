@@ -1,0 +1,93 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../constants/app_colors.dart';
+import '../constants/app_images.dart';
+
+
+Widget customBottomNavigationBar(Function(int) onTap,int currentIndex){
+  return BottomNavigationBar(
+       onTap: onTap,
+      backgroundColor: darkIndigo,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      currentIndex: currentIndex,
+      type: BottomNavigationBarType.fixed,
+      // selectedItemColor: Colors.amberAccent,
+      // unselectedItemColor: Colors.white,
+      // selectedIconTheme:  IconThemeData(color:Colors.amberAccent),
+      // unselectedIconTheme: IconThemeData(color: Colors.white,),
+      // selectedLabelStyle:  GoogleFonts.roboto(color: Colors.amberAccent,fontWeight: FontWeight.w700),
+      // unselectedLabelStyle:  GoogleFonts.roboto(color: Colors.white,fontWeight: FontWeight.w700),
+      selectedFontSize: 0,
+      unselectedFontSize: 0,
+      items: <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+            icon: unselectedIconText(dashboard, "Dashboard"),
+            label: "Dashboard",
+            activeIcon: selectedIconText(dashboard, "Dashboard"),
+        ),
+        BottomNavigationBarItem(
+            icon: unselectedIconText(enquiries, "Enquiries"),
+            label: "Enquiries",
+            activeIcon: selectedIconText(enquiries, "Enquiries"),
+        ),
+        BottomNavigationBarItem(
+            icon: unselectedIconText(clients, "My Clients"),
+            label: "My Clients",
+            activeIcon: selectedIconText(clients, "My Clients"),
+        ),
+        BottomNavigationBarItem(
+            icon:  unselectedIconText(support, "Support Requests"),
+            label: "Support Requests",
+            activeIcon: selectedIconText(support, "Support Requests"),
+        ),
+      ],
+  );
+}
+
+Widget selectedIconText( String icon,String title){
+  return Container(
+    width:160,
+    height:70,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      border: Border(
+        top: BorderSide(
+          color: darkIndigo,
+          width: 1.5,
+        ),
+      ),
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(height: 10,),
+        SvgPicture.asset(icon,color: darkIndigo,),
+        SizedBox(height: 5,),
+        FittedBox(child: Text(title,style: GoogleFonts.roboto(color: darkIndigo,fontWeight: FontWeight.w700,fontSize: 12),),),
+      ],
+    ),
+  );
+}
+
+Widget unselectedIconText( String icon,String title){
+  return Container(
+    width:160,
+    height:70,
+    color: darkIndigo,
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(height: 10,),
+        SvgPicture.asset(icon,color: Colors.white,),
+        SizedBox(height: 5,),
+        FittedBox(child: Text(title,style: GoogleFonts.roboto(color: Colors.white,fontWeight: FontWeight.w700,fontSize: 12),),),
+      ],
+    ),
+  );
+}
+
+
+
+

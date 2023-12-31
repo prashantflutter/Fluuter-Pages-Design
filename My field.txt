@@ -1,0 +1,47 @@
+As the it industry Application Development number of mobile apps is rising day in, and day out, the selection of the right mobile app 
+development framework is one of the growing challenges among businesses. Even though the selections for app 
+development framework should be on the requirement of the project
+Flutter maintains to be at the top in every situation, for every mobile app development project.
+The documentation on these repositories is a huge help in the Flutter development community.
+It helps connect developers and links resources that can answer questions on troubleshooting issues and allow developers to share feedback.
+
+When to Use Flutter ?
+
+Flutter app development is ideal when clients want quick results.
+When companies want reasonably complex apps but at the same time they don’t want to compromise on quality or usability,
+Flutter is the best choice. In a nutshell, Flutter is best in the below scenarios.
+
+Small/Medium complexity projects.
+When clients want apps ready within a short time.
+If clients want native-like applications.
+
+
+Flutter Trends:
+
+Flutter's performance remains outstanding, 
+offering near-native speeds thanks to its use of Dart and AOT compilation. 
+This makes it a compelling choice for performance-critical applications.
+The Flutter  framework is still in its infancy and has a lot of potential for development.
+
+Examples Like We havesome of the top businesses from the list of many.
+
+Let’s some app 
+
+eBay Motors
+Google Ads
+Google  Pay
+The New York Times
+MyBMW
+Realtor.com
+Alibaba Group
+Toyota
+Tencent
+
+
+where did see self in this field in future :
+As Flutter Developer I am woring on my App Develoment skills to 1 or 2 years after top comapany like 
+ Bacancy , 7Span , MoonTachLab one of company part as  Flutter Developer Career.
+
+
+
+

@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+
+import '../constant/app_colors.dart';
+import '../constant/app_fonts.dart';
+import '../constant/app_images.dart';
+
+Widget CustomDropDown({TextStyle? labelStyle,required String labelText,String hintText = "",required String? dropdownValue,
+  required void Function(String?)? onChanged,required List<DropdownMenuItem<String>>? items}){
+  return Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+    child: DropdownButtonFormField<String>(
+      icon:Image.asset(split),
+      iconSize: 20,
+      decoration: InputDecoration(
+        labelText: labelText,
+        labelStyle: labelStyle,
+        contentPadding: EdgeInsets.symmetric(horizontal: 25,),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(
+            color: primeColor,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(
+            color:primeColor,
+          ),
+        ),
+      ),
+      hint:  Text(hintText,style: AppFonts.mediumBoldW500.copyWith(color: grayColor),),
+      dropdownColor: Colors.white,
+      value: dropdownValue,
+      onChanged: onChanged,
+      items: items,
+    ),
+  );
+}
+

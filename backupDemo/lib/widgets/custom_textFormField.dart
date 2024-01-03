@@ -1,0 +1,119 @@
+
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../constant/app_colors.dart';
+import '../constant/app_fonts.dart';
+
+
+Widget CustomFormField({TextEditingController? controller,String value = "",String? labelText, Function()? onEditingComplete,TextInputType? keyboardType,Iterable<String>? autofillHints, String hintText ='', bool obscureText = false, Widget? suffixIcon}){
+  return TextFormField(
+    controller: controller,
+    cursorColor: primeColor,
+    obscureText: obscureText,
+      key: Key(value),
+      autofillHints: autofillHints,
+    keyboardType:keyboardType,
+    onEditingComplete:onEditingComplete,
+    decoration: InputDecoration(
+      labelText:labelText,
+      hintText: hintText,
+      hintStyle:  GoogleFonts.poppins(color: grayColor,fontWeight: FontWeight.w500),
+      enabledBorder: UnderlineInputBorder(
+        borderSide: BorderSide(
+            width: 1, color: yellowColor),
+      ),
+      focusColor: primeColor,
+      focusedBorder: UnderlineInputBorder(
+        borderSide: BorderSide(
+            width: 1, color: yellowColor),
+      ),
+      border: UnderlineInputBorder(
+        borderSide: BorderSide(
+            width: 1  , color: yellowColor),
+      ),
+      suffixIcon: suffixIcon)
+  );
+}
+
+Widget CustomButton({double? width,double? height,String text = "",required Function()
+onPressed,double borderRadius = 0,double fontSize = 14,FontWeight fontWeight = FontWeight.w500 }){
+  return SizedBox(
+  width: width,
+  height: height,
+  child: ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+        elevation: 0,
+        backgroundColor: primeColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius),
+        ),
+      ),
+      // child: Text(text,style: TextStyle(color: Colors.white,fontSize: fontSize,fontWeight: fontWeight),))
+      child: Text(text,style: GoogleFonts.poppins(color: Colors.white,fontSize: fontSize,fontWeight: fontWeight))
+   )
+  );
+}
+
+// GoogleFonts.poppins(color: myFocusNode.hasFocus ? primeColor:grayColor,fontWeight: fontWeight,)
+Widget CustomEnquiry({TextEditingController? controller,TextStyle? labelStyle,FocusNode? focusNode,String? labelText='',int? maxLines = 1,FontWeight fontWeight = FontWeight.w600,TextInputType keyboardType = TextInputType.text,double radius = 16}){
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 20),
+    child: TextFormField(
+      focusNode: focusNode,
+      controller:controller,
+      keyboardType: keyboardType,
+      cursorColor: primeColor,
+      style: AppFonts.regular,
+      maxLines: maxLines,
+      decoration: InputDecoration(
+        labelText: '  ${labelText}  ',
+        labelStyle: labelStyle,
+        alignLabelWithHint: true,
+        enabled: true,
+        contentPadding: EdgeInsets.only(left: 15,right: 20,top: 25),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primeColor,),
+          borderRadius: BorderRadius.circular(radius),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primeColor,),
+          borderRadius: BorderRadius.circular(radius),
+        ),
+      ),
+    ),
+  );
+}
+
+
+Widget CustomEnquiry2({TextEditingController? controller,TextStyle? labelStyle,FocusNode? focusNode,TextEditingController? controller2,TextEditingController? controller3,int number = 1,Function()? onAdd,Function()? onRemove,String? labelText='', int? maxLines = 1,FontWeight fontWeight = FontWeight.w600, TextInputType keyboardType = TextInputType.text
+  ,double radius = 16,bool addNow = true,int? maxLength}){
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 20),
+    child:TextFormField(
+      controller:controller,
+      focusNode: focusNode,
+      keyboardType: keyboardType,
+      cursorColor: primeColor,
+      maxLength: maxLength,
+      style: AppFonts.regular,
+      maxLines: maxLines,
+      decoration: InputDecoration(
+        labelText: '  ${labelText}  ',
+        counterText: "",
+        labelStyle: labelStyle,
+        enabled: true,
+        suffixIcon:addNow?IconButton(onPressed:onAdd, icon: Icon(Icons.add,color: primeColor,)):IconButton(onPressed:onRemove, icon: Icon(Icons.delete,color: Colors.redAccent,)),
+        contentPadding: EdgeInsets.only(left: 15,right: 20),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primeColor,),
+          borderRadius: BorderRadius.circular(radius),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: primeColor,),
+          borderRadius: BorderRadius.circular(radius),
+        ),
+      ),
+    )
+  );
+}

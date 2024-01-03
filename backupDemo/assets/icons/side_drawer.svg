@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.59 20.12">
+    <defs>
+        <style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;}</style>
+    </defs>
+    <title>Asset 21</title>
+    <g id="Layer_2" >
+        <g id="Layer_1-2" >
+            <line class="cls-1" x1="0.5" y1="0.5" x2="27.09" y2="0.5" />
+            <line class="cls-1" x1="0.5" y1="10.06" x2="16.48" y2="10.06" />
+            <line class="cls-1" x1="0.5" y1="19.62" x2="27.09" y2="19.62" />
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 27 20"
+    id="vector">
+    <g id="group">
+        <path
+            id="path"
+            d="M 0.5 0.5 L 27.09 0.5 M 0.5 10.06 L 16.48 10.06 M 0.5 19.62 L 27.09 19.62"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="1"/>
+    </g>
+</svg>

@@ -70,3 +70,36 @@ keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000
 Flutter buils Stap by stap site:
 https://docs.flutter.dev/deployment/android
 
+
+Exploring the Power of Flutter InAppWebView Adding the InAppWebView Widget into your Flutter App
+https://protocoderspoint.com/exploring-the-power-of-flutter-inappwebview/?expand_article=1
+
+
+
+Flutter : How to remove empty space at the top of ListView
+MediaQuery.removePadding(
+        context: context,
+        removeTop: true,
+        child: ListView
+
+ListView(
+   padding: const EdgeInsets.zero,
+   itemBuilder: ...,
+   itemCount: ...
+);
+
+
+To change the trailing icon Color you can use the fallowing parameter in Expansion Tile
+ExpansionTile(
+                //
+                title: Text("Some Text"),
+                trailing: Icon(
+                  Icons.keyboard_arrow_down,
+                  color: Colors.green,
+                ),
+              ),
+
+Error [Solved] Scaffold.of() called with a context that does not contain a Scaffold
+https://www.fluttercampus.com/guide/329/scaffold-of-called-with-a-context-that-does-not-contain-a-scaffold/
+
+

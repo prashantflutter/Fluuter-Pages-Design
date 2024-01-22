@@ -1,4 +1,8 @@
 
+How to disable the behavior Bottom Navigation Bar goes up with keyboard in flutter
+bool isKeyboardOpen = MediaQuery.of(context).viewInsets.bottom != 0.0;
+ bottomNavigationBar: isKeyboardOpen? null : BottomAppBar();
+
 Useful Shortcut Keys for Android Studio
 https://infyom.com/blog/useful-shortcut-keys-for-android-studio
 

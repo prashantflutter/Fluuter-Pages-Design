@@ -1,18 +1,84 @@
 1. What is dart?
-Dart is a general-purpose programming language that can be used for a wide range of applications, including web development, server-side programming,
+- Dart is an open-source, general-purpose, object-oriented programming language with C-style syntax developed by Google in 2011. The purpose of Dart programming is to create 
+a frontend user interfaces for the web and mobile apps. It is under active development, compiled to native machine code for building mobile apps, inspired by other 
+programming languages such as Java, JavaScript, C#, and is Strongly Typed. Since Dart is a compiled language so you cannot execute your code directly; instead, the compiler parses it and transfer it into machine code.
+
+- It supports most of the common concepts of programming languages like classes, interfaces, functions, unlike other programming languages. Dart language does
+not support arrays directly. It supports collection, which is used to replicate the data structure such as arrays, generics, and optional typing.
+
+- Dart is a general-purpose programming language that can be used for a wide range of applications, including web development, server-side programming,
 and mobile app development. Flutter, on the other hand, is a UI SDK specifically designed for building high-performance, cross-platform mobile apps.
+
+
 2. Importance of dart programming language
+-Learning Dart offers several advantages. It enables you to develop cross-platform applications using Flutter, opening up mobile, web, and
+ desktop development opportunities. Dart's focus on performance and efficiency helps you create fast and responsive applications.
+
+
 3. What is Flutter ?
+- Flutter is a mobile app development platform created by Google. 
+ It allows developers to create web, desktop, and cross-platform apps that run on Android and iOS devices. 
+ Flutter uses a reactive programming language called Dart, making development faster and easier than traditional methods.
+
+
 4. Difference between Native application and hybrid application ?
+- In a native app, your developers have to rewrite and redesign all the app functionality in the native development language.
+  A hybrid app lets you write the app functionality in a single codebase. You can then wrap your code in a lightweight native app shell or container. 
+
 5. What are the ways to execute a dart program ?
+- The dart run command supports running a Dart program—located in a file, in the current package, or in one of the dependencies of the current package—from the command line. 
+  This command provides functionality that was previously in pub run and the Dart VM tool. To run a program from an arbitrary location, use the pub global command.
+- The dart run command supports running a Dart program—located in a file, in the current package, or in one of the dependencies of the current package—from the command line. 
+  This command provides functionality that was previously in pub run and the Dart VM tool. To run a program from an arbitrary location, use the pub global command.
+
 6. What is a pub ?
+- The pub package manager has a command-line interface that works with either the flutter tool or the dart tool.
+  With either tool, add the pub command followed by a subcommand such as get.
+
 7. What is SDK ?
+- SDK stands for software development kit. Also known as a devkit, the SDK is a set of software-building tools for a 
+ specific platform, including the building blocks, debuggers and, often, a framework or group of code libraries such 
+ as a set of routines specific to an operating system (OS).
+
+# A typical SDK might include some or all of these resources in its set of tools:
+- Compiler: Translates from one programming language to the one in which you will work
+- Code samples: Give a concrete example of an application or web page
+- Code libraries (framework): Provide a shortcut with code sequences that programmers will use repeatedly
+- Testing and analytics tools: Provide insight into how the application or product performs in testing and production environments
+- Documentation: Gives developers instructions they can refer to as they go
+- Debuggers: Help teams spot errors in their code so they can push out code that works as expected
+  Often, at least one API is also included in the SDK because without the API, applications can’t relay information and work together.
+
 8. Difference between javascript and dart ?
+- Dart differs from JavaScript in that it assigns a static type to every expression and variable. 
+  The static type predicts the runtime type of the values of a variable, or of the value of an expression. 
+  This means that Dart apps have sound static typing.
+
 9. What is run in dart ?
+- The dart run command supports running a Dart program—located in a file, in the current package, 
+  or in one of the dependencies of the current package—from the command line. 
+  This command provides functionality that was previously in pub run and the Dart VM tool.
+
+
 10.What is the lambda function ?
+- Lambda functions are also known as anonymous functions or closures.
+  They are functions without a name that can be used inline within the code. 
+  return_type var_name = (parameters)=> expression;
+- Note: When using the Lambda function syntax, only one expression can be returned, and it must be a single-line expression.
+
 11. What is class and object
+- classes are used to define the blueprint for objects. 
+- They can contain properties and methods that define the behavior and data of objects. 
+- Classes are a fundamental concept in object-oriented programming, which is the paradigm that Flutter uses.
+Class => 1. Class is used as a template for declaring and creating the objects.
+         2. When a class is created, no memory is allocated.
+Object => 1. An object is an instance of a class.
+          2. Objects are allocated memory space whenever they are created.
+
 12.What is inheritance ?
+
 13.What is the meaning of getter and setter ?
+
 14.What is method overriding in dart ?
 15.What is a constructor ?
 16.Difference between final and const in dart programing
@@ -43,3 +109,6 @@ and mobile app development. Flutter, on the other hand, is a UI SDK specifically
 41. How to access screen size in the future?
 42. What is setState ?
 43. What is the difference between Hot Reload and Hot Restart?
+
+How does dart VM work?
+https://medium.com/yavar/how-does-dart-vm-work-65039356e708

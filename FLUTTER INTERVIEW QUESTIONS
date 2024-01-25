@@ -1,0 +1,45 @@
+1. What is dart?
+Dart is a general-purpose programming language that can be used for a wide range of applications, including web development, server-side programming,
+and mobile app development. Flutter, on the other hand, is a UI SDK specifically designed for building high-performance, cross-platform mobile apps.
+2. Importance of dart programming language
+3. What is Flutter ?
+4. Difference between Native application and hybrid application ?
+5. What are the ways to execute a dart program ?
+6. What is a pub ?
+7. What is SDK ?
+8. Difference between javascript and dart ?
+9. What is run in dart ?
+10.What is the lambda function ?
+11. What is class and object
+12.What is inheritance ?
+13.What is the meaning of getter and setter ?
+14.What is method overriding in dart ?
+15.What is a constructor ?
+16.Difference between final and const in dart programing
+17.Which os does dart language supports
+18.What does the app bar widget in flutter contains
+19.What is a scaffold widget ?
+20. Difference between stateless widgets and stateful widgets ?
+21.How can you initialize the final instance variable in dart language?
+22. What is a horizontal bar that is mainly displayed at the top of the Scaffold widget in Flutter
+23. What displays the main content in the Scaffold widget inFlutter?
+24. What is a slider panel that is displayed at the side in Flutter?
+25. Difference between Flutter and react native
+26. Advantages of Flutter
+27. Write the difference between runApp() and main() in flutter
+28. Explain packages and plugins in Flutter.
+29. What do you mean by keys in flutter? When one should use it
+30. Explain Container class in a flutter.
+31.Which one is better, either flutter or react native?
+32. When to use mainAxisAlignment and crossAxisAlignment.
+33.Difference between row and column
+34. Explain BuildContext
+35. What is state management?
+36. Explain pubspec.yaml file.
+37. How can we create HTTP requests in Flutter?
+38. Explain Flutter Provider.
+39. Write the difference between SizedBox Vs Container.
+40. What do you mean by Null-aware operators?
+41. How to access screen size in the future?
+42. What is setState ?
+43. What is the difference between Hot Reload and Hot Restart?
